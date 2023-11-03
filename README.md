@@ -1,6 +1,7 @@
 # Calculadora Web
 
-Esta é uma calculadora simples desenvolvida por Leandro Sousa Costa e Getúlio Santos Mendes, que pode ser acessada através do seguinte link: [Calculadora Web](https://calculadora-lp.leannon.repl.co/)
+Esta é uma calculadora simples desenvolvida por Leandro Sousa Costa e Getúlio Santos Mendes, que pode ser acessada através do seguinte link: <a href="https://calculadora-lp.leannon.repl.co/" target="_blank">Calculadora Web</a>
+
 
 ## Visão Geral
 
