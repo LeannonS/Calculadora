@@ -32,4 +32,5 @@ Escolha a opção que melhor se adequa às suas preferências e comece a fazer s
 
 ✉️ <i>leanndrosousac@gmail.com</i> </p>
 ✉️ <i>rafaelg000@gmail.com</i>
+✉️ <i>getuliosantosmendes@gmail.com</i>
 </a>
