@@ -10,6 +10,8 @@ document.addEventListener("DOMContentLoaded", function ()
 {
   updateDisplay();
 
+  document.body.addEventListener("keydown", handleKey);
+  
   document.getElementById("clearMemory").addEventListener("click", clearMemory);
   document.getElementById("addToMemory").addEventListener("click", addToMemory);
   document.getElementById("subtractFromMemory").addEventListener("click", subtractFromMemory);
@@ -17,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function ()
   document.getElementById("clearDisplay").addEventListener("click", clearDisplay);
   document.getElementById("changeSign").addEventListener("click", changeSign);
 
-  const numberButtons = document.querySelectorAll(".number");
+  const numberButtons = document.querySelectorAll(".number, .operation");
   numberButtons.forEach(function (button)
   {
     button.addEventListener("click", function ()
@@ -25,9 +27,65 @@ document.addEventListener("DOMContentLoaded", function ()
       appendToDisplay(button.textContent);
     });
   });
+  
 
-  document.getElementById("equals").addEventListener("click", calculateResult);
+  document.getElementById("equal-button").addEventListener("click", calculateResult);
 });
+
+function handleKey(e)
+{
+  switch (e.key)
+  {
+    case "Backspace":
+      clearDisplay();
+      break;
+      
+    case "Enter":
+    case "=":
+      calculateResult();
+      break;
+      
+    case "*":
+      appendToDisplay("*");
+      break;
+      
+    case "+":
+      appendToDisplay("+");
+      break;
+      
+    case "-":
+      appendToDisplay("-");
+      break;
+      
+    case ":":
+      appendToDisplay("/");
+      break;
+      
+    case ".":
+      appendToDisplay(".");
+      break;
+      
+    case "0": case "1": case "2": case "3": case "4": case "5": case "6": case "7": case "8": case "9":
+      appendToDisplay(e.key);
+      break;
+
+    case "e":
+      subtractFromMemory();
+      break;
+      
+    case "w":
+      addToMemory();
+      break;
+      
+    case "c":
+      clearMemory();
+      break;
+      
+    case "r":
+      recallMemory();
+      break;
+  }
+}
 
 function isOperator(char)
 {
