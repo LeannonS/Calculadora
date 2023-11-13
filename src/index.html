@@ -16,33 +16,33 @@
     </div>
     
     <div class="buttons">
-      <button class="memory-button" onclick="clearMemory()">MC</button>
-      <button class="memory-button" onclick="addToMemory()">M+</button>
-      <button class="memory-button" onclick="subtractFromMemory()">M-</button>
-      <button class="memory-button" onclick="recallMemory()">MR</button>
+      <button class="memory-button" id="clearMemory">MC</button>
+      <button class="memory-button" id="addToMemory">M+</button>
+      <button class="memory-button" id="subtractFromMemory">M-</button>
+      <button class="memory-button" id="recallMemory">MR</button>
  
-      <button onclick="clearDisplay()">C</button>
-      <button onclick="changeSign()">+/-</button>
-      <button onclick="appendToDisplay('/')">/</button>
-      <button onclick="appendToDisplay('*')">*</button>
+      <button id="clearDisplay">C</button>
+      <button id="changeSign">+/-</button>
+      <button class="operation">/</button>
+      <button class="operation">*</button>
  
-      <button onclick="appendToDisplay('7')">7</button>
-      <button onclick="appendToDisplay('8')">8</button>
-      <button onclick="appendToDisplay('9')">9</button>
-      <button onclick="appendToDisplay('-')">-</button>
+      <button class="number">7</button>
+      <button class="number">8</button>
+      <button class="number">9</button>
+      <button class="operation">-</button>
   
-      <button onclick="appendToDisplay('4')">4</button>
-      <button onclick="appendToDisplay('5')">5</button>
-      <button onclick="appendToDisplay('6')">6</button>
-      <button onclick="appendToDisplay('+')">+</button>
+      <button class="number">4</button>
+      <button class="number">5</button>
+      <button class="number">6</button>
+      <button class="operation">+</button>
  
-      <button onclick="appendToDisplay('1')">1</button>
-      <button onclick="appendToDisplay('2')">2</button>
-      <button onclick="appendToDisplay('3')">3</button>
-      <button class="equal-button" onclick="calculateResult()">=</button>
+      <button class="number">1</button>
+      <button class="number">2</button>
+      <button class="number">3</button>
+      <button id="equal-button">=</button>
   
-      <button onclick="appendToDisplay('0')" class="double-width">0</button>
-      <button onclick="appendToDisplay('.')">.</button>
+      <button class="number double-width">0</button>
+      <button class="operation">.</button>
     </div>
   </div>
 </body>
