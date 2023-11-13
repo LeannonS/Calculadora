@@ -62,7 +62,7 @@ button
   cursor: pointer;
 }
 
-.equal-button
+#equal-button
 {
   background-color: #f47a42;
   color: #fff;
